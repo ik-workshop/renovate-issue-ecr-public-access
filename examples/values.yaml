@@ -6,5 +6,5 @@
 # curl -k -H "Authorization: Bearer $TOKEN" https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/tags/list | jq . | head
 image:
   repository: public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe
-  tag: "v2.7.0-eks-1-21-16"
+  tag: "v2.10.0-eks-1-28-latest"
 
