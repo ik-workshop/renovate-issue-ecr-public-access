@@ -1,0 +1,10 @@
+
+# https://gallery.ecr.aws/
+# https://gallery.ecr.aws/eks-distro/kubernetes-csi/livenessprobe
+# How to Access
+# TOKEN=$(curl -k https://public.ecr.aws/token/ | jq -r '.token')
+# curl -k -H "Authorization: Bearer $TOKEN" https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/tags/list | jq . | head
+image:
+  repository: public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe
+  tag: "v2.7.0-eks-1-21-16"
+

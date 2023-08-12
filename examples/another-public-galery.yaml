@@ -1,0 +1,9 @@
+
+# https://gallery.ecr.aws/
+# https://gallery.ecr.aws/amazonlinux/amazonlinux
+# How to Access
+# TOKEN=$(curl -k https://public.ecr.aws/token/ | jq -r '.token')
+# curl -k -H "Authorization: Bearer $TOKEN" https://public.ecr.aws/v2/amazonlinux/amazonlinux/tags/list | jq . | head
+image:
+  repository: public.ecr.aws/amazonlinux/amazonlinux
+  tag: "2018.03.0.20201028.0"
