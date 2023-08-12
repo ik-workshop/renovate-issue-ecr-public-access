@@ -1,5 +1,9 @@
 # Renovate Issue ECR public access
 
+- [Question]()
+
+The main issue is, that AWS ECR public registries not supported in full.
+
 ---
 
 ![](https://img.shields.io/github/commit-activity/m/ik-workshop/renovate-issue-ecr-public-access)
@@ -49,6 +53,21 @@ $ curl -k -H "Authorization: Bearer $TOKEN" https://public.ecr.aws/v2/aws-ec2/he
   "tags": [
     "0.22.0"
   ]
+}
+$ skopeo list-tags --no-creds docker://public.ecr.aws/amazonlinux/amazonlinux
+> {
+    "Repository": "public.ecr.aws/amazonlinux/amazonlinux",
+    "Tags": [
+        "2.0.20211201.0",
+        "2.0.20220218.0-amd64",
+        "2018.03.0.20201028.0",
+        "2022",
+        "2022.0.20230118.3",
+        "2023.0.20230308.0",
+        "2018.03.0.20220310.0",
+        "2.0.20220316.0-arm64v8",
+        "2.0.20220406.1",
+        "2.0.20220606.1"
 }
 ```
 
