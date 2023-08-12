@@ -1,6 +1,6 @@
 # Renovate Issue ECR public access
 
-- [Question]()
+- [Question](https://github.com/renovatebot/renovate/discussions/23839)
 
 The main issue is, that AWS ECR public registries not supported in full. Renovate seems to have issues accessing ECR repository without any explicit password or access keys.
 

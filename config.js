@@ -15,10 +15,10 @@ module.exports = {
   "baseBranches": ["master", "main"],
   "enabledManagers": ["helmv3", "helm-values"],
   "hostRules": [
-    {
-      "hostType": "docker",
-      "matchHost": "public.ecr.aws"
-    },
+    // {
+    //   "hostType": "docker",
+    //   "matchHost": "public.ecr.aws"
+    // },
     // {
     //   "hostType": "docker",
     //   "matchHost": "public.ecr.aws",
