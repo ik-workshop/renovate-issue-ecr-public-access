@@ -14,6 +14,34 @@ module.exports = {
   "requireConfig": "optional",
   "baseBranches": ["master", "main"],
   "enabledManagers": ["helmv3", "helm-values"],
+  "packageRules": [
+    // {
+    //   "matchDatasources": ["docker"],
+    //   "matchPackageNames": ["public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe"],
+    //   "versioning": "loose"
+    // },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe"],
+      "versioning": "regex:^v?(?<major>\\d+)\.(?<minor>\\d+)\.(?<patch>\\d+)-eks-\\d+-\\d+-\\d+$",
+      // https://docs.renovatebot.com/configuration-options/#prbodydefinitions
+      // not required, just playing with settings
+      "prBodyDefinitions": {
+        "Compatibility Guide": "[link](https://docs.aws.amazon.com/eks/latest/userguide/managing-coredns.html)",
+        "Sources": "[link](https://github.com/coredns/coredns)",
+        "Public Gallery": "[link](https://gallery.ecr.aws/eks-distro/coredns/coredns)"
+      },
+      "prBodyColumns": [
+        "Package",
+        "Update",
+        "Change",
+        "Compatibility Guide",
+        "Sources",
+        "Public Gallery"
+      ]
+    }
+  ],
+  "regexManagers": [],
   "hostRules": [
     // {
     //   "hostType": "docker",
