@@ -15,11 +15,13 @@ module.exports = {
   "baseBranches": ["master", "main"],
   "enabledManagers": ["helmv3", "helm-values"],
   "packageRules": [
-    // {
-    //   "matchDatasources": ["docker"],
-    //   "matchPackageNames": ["public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe"],
-    //   "versioning": "loose"
-    // },
+  // use this option
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe"],
+      "versioning": "loose"
+    },
+  // or configure specific versioning
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe"],
