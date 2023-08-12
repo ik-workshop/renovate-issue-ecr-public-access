@@ -1,0 +1,204 @@
+DEBUG: No config migration necessary (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Found repo ignorePaths (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts found (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: No vulnerability alerts found (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: baseBranches (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "baseBranches": ["master", "main"]
+ WARN: Base branch does not exist - skipping (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=master)
+DEBUG: baseBranch: main (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: extract() (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Setting current branch to main (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: latest commit (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "branchName": "main",
+       "latestCommitDate": "2023-08-12T10:47:42+01:00"
+DEBUG: Applying enabledManagers filtering (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Using file match: (^|/)values\.ya?ml$ for manager helm-values (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Using file match: (^|/)Chart\.ya?ml$ for manager helmv3 (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Matched 1 file(s) for manager helm-values: examples/values.yaml (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Matched 1 file(s) for manager helmv3: examples/oci-ecr/Chart.yml (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: manager extract durations (ms) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "managers": {"helm-values": 17, "helmv3": 20}
+DEBUG: Found helm-values package files (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Found helmv3 package files (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Found 2 package file(s) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+ INFO: Dependency extraction complete (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "stats": {
+         "managers": {
+           "helm-values": {"fileCount": 1, "depCount": 1},
+           "helmv3": {"fileCount": 1, "depCount": 1}
+         },
+         "total": {"fileCount": 2, "depCount": 2}
+       }
+DEBUG: baseBranch: main (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getLabels(https://public.ecr.aws, aws-ec2/helm/aws-node-termination-handler, 0.22.0) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getManifestResponse(https://public.ecr.aws, aws-ec2/helm/aws-node-termination-handler, 0.22.0, get) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getLabels(https://public.ecr.aws, eks-distro/kubernetes-csi/livenessprobe, v2.10.0-eks-1-22-27) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getManifestResponse(https://public.ecr.aws, eks-distro/kubernetes-csi/livenessprobe, v2.10.0-eks-1-22-27, get) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getManifestResponse(https://public.ecr.aws, eks-distro/kubernetes-csi/livenessprobe, sha256:2de3b646423c2fdf4791cf93c68d77a52608aee791ec678190c091b8c7de65b4, get) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: manifest blob response body missing the "config" property (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "headers": {
+         "content-type": "application/octet-stream",
+         "content-length": "712",
+         "connection": "close",
+         "date": "Fri, 11 Aug 2023 17:59:23 GMT",
+         "last-modified": "Wed, 21 Jun 2023 22:51:24 GMT",
+         "etag": "\"b788aaf9871cbdfd48381599c2b171b0-1\"",
+         "x-amz-server-side-encryption": "AES256",
+         "x-amz-version-id": "PG1mTfHM_6OeOuIet0SqDYkNPLXy5xdr",
+         "accept-ranges": "bytes",
+         "server": "AmazonS3",
+         "x-cache": "Hit from cloudfront",
+         "via": "1.1 c6c27fb3a8bc413f99e81981948a67c6.cloudfront.net (CloudFront)",
+         "x-amz-cf-pop": "MAN50-C1",
+         "x-amz-cf-id": "xGT_BTK_ChlaNyq1_XDj2iTcF_XYnWQrjZntMnBRLhaCLPSFnEdSjQ==",
+         "age": "57230"
+       },
+       "body": {
+         "name": "aws-node-termination-handler",
+         "home": "https://github.com/aws/aws-node-termination-handler/",
+         "sources": ["https://github.com/aws/aws-node-termination-handler/"],
+         "version": "0.22.0",
+         "description": "A Helm chart for the AWS Node Termination Handler.",
+         "keywords": ["aws", "eks", "ec2", "node-termination", "spot"],
+         "maintainers": [
+           {
+             "name": "Brandon Wagner",
+             "email": "bwagner5@users.noreply.github.com",
+             "url": "https://github.com/bwagner5"
+           },
+           {
+             "name": "Jillian Kuentz",
+             "email": "jillmon@users.noreply.github.com",
+             "url": "https://github.com/jillmon"
+           }
+         ],
+         "icon": "https://raw.githubusercontent.com/aws/eks-charts/master/docs/logo/aws.png",
+         "apiVersion": "v2",
+         "appVersion": "1.20.0",
+         "kubeVersion": ">= 1.16-0",
+         "type": "application"
+       }
+DEBUG: found labels in manifest (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "labels": {}
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: detectSemanticCommits() (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: getCommitMessages (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: semanticCommits: detected "unknown" (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: semanticCommits: disabled (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: 0 flattened updates found:  (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: Returning 0 branch(es) (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: config.repoIsOnboarded=true (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+DEBUG: packageFiles with updates (repository=ik-workshop/renovate-issue-ecr-public-access, baseBranch=main)
+       "config": {
+         "helm-values": [
+           {
+             "deps": [
+               {
+                 "depName": "public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe",
+                 "currentValue": "v2.7.0-eks-1-21-16",
+                 "datasource": "docker",
+                 "replaceString": "v2.7.0-eks-1-21-16",
+                 "versioning": "docker",
+                 "autoReplaceStringTemplate": "{{newValue}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "updates": [],
+                 "packageName": "public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe",
+                 "warnings": [],
+                 "registryUrl": "https://public.ecr.aws",
+                 "currentVersion": "v2.7.0",
+                 "fixedVersion": "v2.7.0-eks-1-21-16"
+               }
+             ],
+             "packageFile": "examples/values.yaml"
+           }
+         ],
+         "helmv3": [
+           {
+             "deps": [
+               {
+                 "depName": "aws-node-termination-handler",
+                 "currentValue": "11.14.4",
+                 "datasource": "docker",
+                 "packageName": "public.ecr.aws/aws-ec2/helm/aws-node-termination-handler",
+                 "updates": [],
+                 "versioning": "docker",
+                 "warnings": [],
+                 "registryUrl": "https://public.ecr.aws",
+                 "currentVersion": "11.14.4",
+                 "fixedVersion": "11.14.4"
+               }
+             ],
+             "datasource": "helm",
+             "packageFileVersion": "1.0.0",
+             "packageFile": "examples/oci-ecr/Chart.yml"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: processRepo() (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Processing 0 branches:  (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Calculated maximum PRs remaining this run: 99 (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: PullRequests limit = 99 (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Calculated maximum branches remaining this run: 99 (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Branches limit = 99 (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: ensureDependencyDashboard() (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Closing Dependency Dashboard (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Retrieving issueList (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Retrieved 0 issues (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Removing any stale branches (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: config.repoIsOnboarded=true (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: No renovate branches found (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: getPrList success (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: Branch summary (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "f4703181af7e0efc10fb9f11239149cb17fbc966"}],
+       "branches": [],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+DEBUG: Renovate repository PR statistics (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "stats": {"total": 0, "open": 0, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=ik-workshop/renovate-issue-ecr-public-access)
+DEBUG: Repository timing splits (milliseconds) (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "splits": {"init": 5390, "extract": 117, "lookup": 2779, "onboarding": 0, "update": 4},
+       "total": 8898
+DEBUG: Package cache statistics (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "get": {"count": 4, "avgMs": 2, "medianMs": 1, "maxMs": 5},
+       "set": {"count": 3, "avgMs": 19, "medianMs": 20, "maxMs": 29}
+DEBUG: http statistics (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "urls": {
+         "https://api.github.com/graphql (POST,200)": 2,
+         "https://api.github.com/repos/ik-workshop/renovate-issue-ecr-public-access/pulls (GET,200)": 1,
+         "https://public.ecr.aws/token/ (GET,200)": 3,
+         "https://public.ecr.aws/v2/ (GET,401)": 1,
+         "https://public.ecr.aws/v2/aws-ec2/helm/aws-node-termination-handler/blobs/sha256:3e04c2c86893a8cf6f79aa003b04d9d022d90451840704b16d8215141b02f8b2 (GET,200)": 1,
+         "https://public.ecr.aws/v2/aws-ec2/helm/aws-node-termination-handler/manifests/0.22.0 (GET,200)": 1,
+         "https://public.ecr.aws/v2/aws-ec2/helm/aws-node-termination-handler/tags/list (GET,200)": 1,
+         "https://public.ecr.aws/v2/aws-ec2/helm/aws-node-termination-handler/tags/list (GET,401)": 1,
+         "https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/blobs/sha256:b77666509016ea3ea2f576275635d705a8d298747521314d8f1864181d3ce328 (GET,200)": 1,
+         "https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/manifests/sha256:2de3b646423c2fdf4791cf93c68d77a52608aee791ec678190c091b8c7de65b4 (GET,200)": 1,
+         "https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/manifests/v2.10.0-eks-1-22-27 (GET,200)": 1,
+         "https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/tags/list (GET,200)": 1,
+         "https://public.ecr.aws/v2/eks-distro/kubernetes-csi/livenessprobe/tags/list (GET,401)": 1
+       },
+       "hostStats": {
+         "api.github.com": {"requestCount": 3, "requestAvgMs": 290, "queueAvgMs": 0},
+         "public.ecr.aws": {"requestCount": 13, "requestAvgMs": 303, "queueAvgMs": 0}
+       },
+       "totalRequests": 16
+DEBUG: Package lookup durations (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "docker": {"count": 2, "averageMs": 2617, "totalMs": 5234, "maximumMs": 2751}
+DEBUG: dns cache (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "hosts": []
+ INFO: Repository finished (repository=ik-workshop/renovate-issue-ecr-public-access)
+       "cloned": true,
+       "durationMs": 8898
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 3 file cached entries in 28ms
+DEBUG: Renovate exiting
